@@ -19,6 +19,7 @@ configopts = '--with-threads=posix --enable-shared --enable-mpi-thread-multiple 
 configopts += '--enable-mpirun-prefix-by-default '  # suppress failure modes in relation to mpirun path
 configopts += '--disable-dlopen '  # statically link component, don't do dynamic loading
 configopts += '--with-hwloc=$EBROOTHWLOC '
+configopts += '--with-pmi ' # PMI/PMI2 support
 
 dependencies = [('hwloc', '1.8.1')]
 
